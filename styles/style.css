@@ -1,5 +1,93 @@
 /* Common CSS for Large Device */
 * {
   font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
 }
 /* font-family: "Dancing Script", cursive; */
+
+/* Header Start */
+header {
+  background-color: #232323;
+}
+
+/* Nav Start */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.logo {
+  color: #e6533c;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 36px;
+  font-style: italic;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li {
+  margin-right: 20px;
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+
+#active-link {
+  background-color: #e6533c;
+  border-radius: 25px;
+  padding: 10px 25px;
+}
+
+#menu-bar {
+  width: 25px;
+  height: 25px;
+  display: none;
+}
+
+/* Nav Finish */
+
+/* Header Finish */
+
+/* Small Device Responsive */
+@media (max-width: 576px) {
+  /* Common CSS */
+  * {
+    font-size: 16px;
+  }
+
+  /* Header Start */
+  /* Nav Start  */
+  nav {
+    justify-content: space-between;
+    margin: 0 25px;
+  }
+
+  ul {
+    display: none;
+  }
+
+  #menu-bar {
+    display: block;
+  }
+  /* Nav Finish  */
+  /* Header Finish */
+}
+
+/* Medium Device Responsive */
+@media (min-width: 577px) and (max-width: 992px) {
+  /* Common CSS */
+}
