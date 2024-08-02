@@ -5,7 +5,19 @@
   margin: 0;
   font-size: 18px;
 }
-/* font-family: "Dancing Script", cursive; */
+.common-button {
+  background-color: #e6533c;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.common-button:active {
+  transform: translateY(4px);
+}
 
 /* Header Start */
 header {
@@ -60,6 +72,97 @@ ul li a {
 
 /* Nav Finish */
 
+/* Hero Start  */
+#hero {
+  width: 70%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#hero-title {
+  color: #fff;
+  font-size: 78px;
+}
+
+#hero-special-word {
+  font-size: 78px;
+  font-family: "Dancing Script", cursive;
+}
+
+#hero-subtitle {
+  width: 65%;
+  margin: 25px 0;
+  color: #fff;
+  opacity: 50%;
+}
+
+#hero-button {
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 25px;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+#hero-button:active {
+  transform: translateY(4px);
+}
+
+#hero-image {
+  position: relative;
+}
+
+.hero-marketing {
+  padding: 25px;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  width: 170px;
+  height: 75px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+}
+
+#hero-marketing-1 {
+  position: absolute;
+  top: 35%;
+  right: 12%;
+}
+
+#hero-marketing-2 {
+  position: absolute;
+  top: 60%;
+  right: 25%;
+}
+
+.hero-marketing-key-number {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hero-marketing-text {
+  color: #fff;
+  opacity: 50%;
+  font-size: 16px;
+}
+
+#hero-marketing-button {
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #e6533c;
+  margin-right: 15px;
+}
+/* Hero Finish  */
+
 /* Header Finish */
 
 /* Small Device Responsive */
@@ -84,10 +187,75 @@ ul li a {
     display: block;
   }
   /* Nav Finish  */
+
+  /* Hero Start  */
+  #hero {
+    width: 80%;
+    margin: 50px auto;
+    flex-direction: column;
+  }
+
+  #hero-title {
+    font-size: 36px;
+  }
+
+  #hero-special-word {
+    font-size: 36px;
+  }
+
+  #hero-subtitle {
+    width: 100%;
+    text-align: justify;
+  }
+
+  #hero-button {
+    margin-top: 15px;
+    margin-left: 0;
+  }
+
+  .hero-marketing {
+    width: 145px;
+    height: 74px;
+  }
+
+  #hero-marketing-1 {
+    top: 92%;
+    right: 7%;
+  }
+
+  #hero-marketing-2 {
+    top: 115%;
+    right: 50%;
+  }
+  /* Hero Finish  */
+
   /* Header Finish */
 }
 
 /* Medium Device Responsive */
 @media (min-width: 577px) and (max-width: 992px) {
   /* Common CSS */
+  /* Header Start */
+
+  /* Hero Start  */
+  #hero {
+    width: 90%;
+    margin: 50px auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #hero-marketing-1 {
+    top: 65%;
+    left: 50%;
+  }
+
+  #hero-marketing-2 {
+    top: 80%;
+    left: 10%;
+  }
+  /* Hero Finish  */
+
+  /* Header Finisth */
 }
