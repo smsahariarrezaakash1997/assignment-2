@@ -224,6 +224,44 @@ ul li a {
 
 /* Change Your Habit Section Finish  */
 
+/* Run Section Start */
+#run-section {
+  background-color: #000000;
+  padding: 100px 0;
+}
+
+#run-container {
+  background-color: #222222;
+  width: 60%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  padding: 50px;
+  border-radius: 15px;
+}
+
+#run-image img {
+  width: 80%;
+  border-radius: 15px;
+}
+
+#run-info h1 {
+  color: white;
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+#run-info p {
+  color: #ffffff;
+  opacity: 50%;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Run Section Finish */
+
 /* Small Device Responsive */
 @media (max-width: 576px) {
   /* Common CSS */
@@ -307,6 +345,22 @@ ul li a {
     gap: 55px;
   }
   /* Change Your Habit Section Finish  */
+
+  /* Run Section Start */
+  #run-container {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+
+  #run-info h1 {
+    font-size: 32px;
+  }
+
+  #run-image img {
+    width: 100%;
+  }
+  /* Run Section Finish */
 }
 
 /* Medium Device Responsive */
@@ -343,4 +397,18 @@ ul li a {
     gap: 55px;
   }
   /* Change Your Habit Section Finish  */
+
+  /* Run Section Start */
+  #run-container {
+    align-items: center;
+  }
+
+  #run-info h1 {
+    font-size: 32px;
+  }
+
+  #run-image img {
+    width: 100%;
+  }
+  /* Run Section Finish */
 }
