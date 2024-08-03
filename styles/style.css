@@ -262,6 +262,37 @@ ul li a {
 
 /* Run Section Finish */
 
+/* Training section Start */
+#training-section {
+  background-color: #000000;
+  padding-bottom: 100px;
+}
+
+#training-container {
+  margin: 100px auto 0;
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#training-container div {
+  position: relative;
+}
+
+#training-container div img {
+  width: 100%;
+  height: 300px;
+}
+#training-container div p {
+  position: absolute;
+  bottom: 5%;
+  left: 4%;
+  font-weight: 800;
+  font-size: 18px;
+  color: white;
+}
+/* Training section Finish */
+
 /* Small Device Responsive */
 @media (max-width: 576px) {
   /* Common CSS */
