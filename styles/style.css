@@ -293,6 +293,69 @@ ul li a {
 }
 /* Training section Finish */
 
+/* BMI Section Start */
+#bmi-section {
+  background-color: #232323;
+  padding: 100px 0;
+}
+
+#bmi-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.bmi-title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.bmi-subtitle {
+  color: #fff;
+  opacity: 50%;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #444;
+  padding: 10px;
+  text-align: left;
+  color: #fff;
+  opacity: 50%;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+input,
+select {
+  background-color: #444;
+  color: #fff;
+}
+/* BMI Section Finish */
+
 /* Small Device Responsive */
 @media (max-width: 576px) {
   /* Common CSS */
@@ -392,6 +455,26 @@ ul li a {
     width: 100%;
   }
   /* Run Section Finish */
+
+  /* Training Section Start */
+  #training-section {
+    padding-top: 50px;
+  }
+
+  #training-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #training-container div img {
+    height: auto;
+  }
+  /* Training Section Finish */
+
+  /* BMI Section Start */
+  #bmi-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* BMI Section Finish */
 }
 
 /* Medium Device Responsive */
@@ -414,6 +497,11 @@ ul li a {
 
   #hero-marketing-2 {
     top: 70%;
+  }
+
+  #hero-button {
+    margin-left: 0;
+    margin-top: 10px;
   }
   /* Hero Finish  */
 
@@ -442,4 +530,22 @@ ul li a {
     width: 100%;
   }
   /* Run Section Finish */
+
+  /* Training Section Start */
+
+  #training-section {
+    padding-top: 100px;
+  }
+
+  #training-container div img {
+    height: auto;
+  }
+
+  /* Training Section Finish */
+
+  /* BMI Section Start */
+  #bmi-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* BMI Section Finish */
 }
